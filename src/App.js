@@ -13,7 +13,7 @@ function App() {
     }
     fetch();
   }
-    )
+    ,[works])
 
 const [newWork,setNewWork] = useState('')
 
