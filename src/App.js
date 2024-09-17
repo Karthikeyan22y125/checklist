@@ -11,7 +11,8 @@ function App() {
 
   useEffect(()=> {
     const fetch = ()=>{
-      setWorks(JSON.parse(localStorage.getItem('check_list')));
+      const items = [...works,JSON.parse(localStorage.getItem('check_list'))];
+      setWorks(items);
     }
     fetch();
   }
