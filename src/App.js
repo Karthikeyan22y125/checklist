@@ -1,7 +1,7 @@
 import Header from "./Header";
 import Content from "./Content";
 import Footer from "./Footer";
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Addworks from "./Addworks";
 import Searchwork from "./Searchwork";
 function App() {
