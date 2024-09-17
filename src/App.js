@@ -5,7 +5,9 @@ import { useState, useEffect } from 'react'
 import Addworks from "./Addworks";
 import Searchwork from "./Searchwork";
 function App() {
-  const [works,setWorks] = useState([])
+  const [works,setWorks] = useState([{
+    id,checked,work
+  }])
 
   useEffect(()=> {
     const fetch = ()=>{
