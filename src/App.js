@@ -6,7 +6,7 @@ import Addworks from "./Addworks";
 import Searchwork from "./Searchwork";
 function App() {
   const [works,setWorks] = useState([{
-    id,checked,work
+    id:1,checked:false,work:"food"
   }])
 
   useEffect(()=> {
