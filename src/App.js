@@ -5,7 +5,15 @@ import { useState } from 'react'
 import Addworks from "./Addworks";
 import Searchwork from "./Searchwork";
 function App() {
-  const [works,setWorks] = useState(JSON.parse(localStorage.getItem('check_list')))
+  const [works,setWorks] = useState([])
+
+  useEffect(()=> {
+    const fetch = ()=>{
+      setWorks(JSON.parse(localStorage.getItem('check_list')));
+    }
+    fetch();
+  }
+    )
 
 const [newWork,setNewWork] = useState('')
 
